@@ -1,4 +1,4 @@
-# week2
+# week2 homework
 processing work
 
 A rotating sphere with multiple direcitonal and point light on. 
