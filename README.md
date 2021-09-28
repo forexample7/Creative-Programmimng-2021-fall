@@ -1,6 +1,6 @@
-# week2 homework
+# Creative Programming homework
 processing work
 
-A rotating sphere with multiple direcitonal and point light on. 
+A place to upload all the course work of Creative Programming
 
-Trying to imitate the appearance of earth and generate a focus light on it.
+Open to all the comments and suggestions
