@@ -1,7 +1,7 @@
 void setup(){
   size(600, 600);
   background(255);
-  frameRate(10);
+  frameRate(5);
   initiateData();
 }
 
@@ -12,7 +12,7 @@ float y0 = 0;
 float[] arr;
 
 void draw(){
-  fill(255, 15);
+  fill(255, 20);
   rect(0, 0, width, height);
   drawLines(w, h, x0, y0);
 
@@ -38,7 +38,10 @@ void drawLines(float w, float h, float x0, float y0){
   float rangeRectY = h - y1;
   fill(0);
   
-  rect(x1, y1, random(rangeRectX), random(rangeRectY));
+  if(k<=0.25){rect(x1, y1, random(rangeRectX), random(rangeRectY));}
+  else if(k>0.25&&k<=0.5){rect(x1, y1, -random(rangeRectX), random(rangeRectY));}
+  else if(k>0.5&&k<=0.75){rect(x1, y1, random(rangeRectX), -random(rangeRectY));}
+  else {rect(x1, y1, -random(rangeRectX), -random(rangeRectY));}
 
   //float[] arr ={x1, w, y1, h};
   //return arr;
