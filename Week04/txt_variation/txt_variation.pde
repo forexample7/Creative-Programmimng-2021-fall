@@ -54,19 +54,23 @@ void draw(){
 void drawCanvas(){
   pg.beginDraw();
   pg.background(64);
-  pg.fill(255);
   pg.stroke(0);
   pg.strokeWeight(30);
   pg.textFont(font);
-  pg.textSize(250);
   pg.push();
   pg.translate(width/2, height/2);
   pg.textAlign(CENTER, CENTER);
+  pg.fill(0);
+  pg.textSize(250);
+  pg.text("ALOHA", 6, 6);
+  pg.fill(255);
+  pg.textSize(250);
   pg.text("ALOHA", 0, 0);
   pg.pop();
   pg.endDraw();
   
 }
+
 
 void drawEllipse(int r){
   push();
