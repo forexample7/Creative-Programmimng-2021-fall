@@ -49,6 +49,7 @@ void draw(){
   }
   
   drawEllipse(200);  
+  changeColor();
 }
 
 void drawCanvas(){
@@ -82,4 +83,10 @@ void drawEllipse(int r){
   //filter(BLUR, 10);
   
   pop();
+}
+
+void changeColor(){
+  if(mousePressed == true){
+    filter(INVERT);
+  }
 }
